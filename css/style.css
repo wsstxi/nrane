@@ -1281,3 +1281,39 @@ img {
         font-size: 12px;
     }
 }
+
+@media (max-width: 576px) {
+    .header__inner {
+        padding: 0 12px; 
+        gap: 8px; 
+    }
+
+    .logo__text {
+        font-size: 18px; /* чуть меньше логотип */
+    }
+
+    .logo__img {
+        height: 24px; /* чуть меньше иконка логотипа */
+    }
+
+    .nav__link {
+        font-size: 14px; /* чуть меньше шрифт в меню */
+        padding: 4px 0;
+    }
+
+    .header__cart {
+        font-size: 16px; /* чуть меньше иконка корзины */
+    }
+
+    .cart-count {
+        font-size: 10px;
+        line-height: 16px;
+        min-width: 16px;
+        padding: 0 5px;
+    }
+
+    .header__burger span {
+        width: 22px; /* чуть меньше бургер-меню */
+        height: 2.5px;
+    }
+}
