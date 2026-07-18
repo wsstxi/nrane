@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRANE — Армянские символические украшения</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========================================== -->
+<!-- ШАПКА (Header)                             -->
+<!-- ========================================== -->
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="NRANE" class="logo__img" />
+            <span class="logo__text">NRANE</span>
+        </a>
+
+        <nav class="nav" id="mainNav">
+            <a href="catalog.html" class="nav__link">Каталог</a>
+            <a href="collections.html" class="nav__link">Коллекции</a>
+            <a href="about.html" class="nav__link">О нас</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="cart.html" class="header__cart">
+                🛒 <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <button class="header__burger" id="burgerBtn" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- ========================================== -->
+<!-- БАННЕР (HERO) С КАРТИНКОЙ-ФОНОМ           -->
+<!-- ========================================== -->
+<section class="hero">
+    <div class="hero__bg">
+        <!-- ★★★ СЮДА ВСТАВЬТЕ СВОЮ КАРТИНКУ СЕРЕЖЕК ★★★ -->
+        <img src="img/hero-bg.jpg" alt="Украшения NRANE" class="hero__bg-img" />
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <span class="hero__tag">Армянские символические украшения</span>
+            <h1 class="hero__title">
+                Украшения,<br />
+                рассказывающие <span class="hero__highlight">историю</span>
+            </h1>
+            <p class="hero__text">
+                Каждое изделие NRANE — это мост между древней культурой и современностью. Символы, которые защищают и вдохновляют.
+            </p>
+            <a href="catalog.html" class="btn btn-primary">Смотреть коллекцию →</a>
+        </div>
+    </div>
+</section>
+    
+    <!-- ========================================== -->
+    <!-- ХИТЫ ПРОДАЖ                               -->
+    <!-- ========================================== -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Хиты продаж</h2>
+                <a href="catalog.html" class="link-more">Смотреть все →</a>
+            </div>
+            <div class="products-grid" id="hitsGrid">
+                <!-- Загружается из JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ПРЕИМУЩЕСТВА                              -->
+    <!-- ========================================== -->
+    <section class="advantages">
+        <div class="container advantages__grid">
+            <div class="advantage-item">
+                <div class="advantage-item__icon"></div>
+                <h4>Подлинность</h4>
+                <p>Гарантия на все украшения</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item__icon"></div>
+                <h4>Бесплатная доставка</h4>
+                <p>При заказе от 5000 ₽</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item__icon"></div>
+                <h4>Безопасная оплата</h4>
+                <p>Все способы оплаты</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item__icon"></div>
+                <h4>Поддержка</h4>
+                <p>Поможем с выбором</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ФИЛОСОФИЯ БРЕНДА                          -->
+    <!-- ========================================== -->
+    <section class="brand-philosophy">
+        <div class="container">
+            <div class="brand-philosophy__inner">
+                <h2 class="section-title">NRANE — Возрождение армянского наследия</h2>
+                <p class="brand-philosophy__text">
+                    Каждое украшение NRANE создано с любовью к армянской культуре. Мы исследуем древние символы, чтобы подарить им новую жизнь.
+                    Наши коллекции — это не просто ювелирные изделия, это личные талисманы, которые хранят историю и силу предков.
+                </p>
+                <a href="about.html" class="btn btn-primary">Узнать больше о нас</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========================================== -->
+<!-- ПОДВАЛ (Footer)                            -->
+<!-- ========================================== -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__col">
+            <a href="index.html" class="logo logo--footer">
+                <img src="img/logo.svg" alt="NRANE" class="logo__img" />
+                <span class="logo__text">NRANE</span>
+            </a>
+            <p class="footer__copy">© 2026 NRANE. Все права защищены.</p>
+            <p class="footer__copy">Сделано с ❤️ в Армении</p>
+        </div>
+        <div class="footer__col">
+            <h4>Информация</h4>
+            <ul class="footer__links">
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:info@nrane.com" class="footer__email">info@nrane.com</a>
+            <div class="footer__socials">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

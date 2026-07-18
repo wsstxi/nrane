@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRANE — Корзина</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========================================== -->
+<!-- ШАПКА                                      -->
+<!-- ========================================== -->
+<header class="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="NRANE" class="logo__img" onerror="this.style.display='none'" />
+            <span class="logo__text">NRANE</span>
+        </a>
+        <nav class="nav" id="mainNav">
+            <a href="catalog.html" class="nav__link">Каталог</a>
+            <a href="collections.html" class="nav__link">Коллекции</a>
+            <a href="about.html" class="nav__link">О нас</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
+        </nav>
+        <div class="header__actions">
+            <a href="cart.html" class="header__cart active">
+                🛒 <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <button class="header__burger" id="burgerBtn" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- ========================================== -->
+    <!-- ЗАГОЛОВОК СТРАНИЦЫ                        -->
+    <!-- ========================================== -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Корзина</h1>
+            <p class="page-header__subtitle">Ваши выбранные украшения</p>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- КОРЗИНА                                    -->
+    <!-- ========================================== -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart__empty" id="cartEmpty">
+                <p>🛒 Ваша корзина пуста</p>
+                <a href="catalog.html" class="btn btn-primary">Перейти в каталог</a>
+            </div>
+
+            <div class="cart__content" id="cartContent" style="display:none;">
+                <div class="cart__items" id="cartItems">
+                    <!-- Загружается из JavaScript -->
+                </div>
+
+                <div class="cart__summary">
+                    <div class="cart__total">
+                        <span>Итого:</span>
+                        <span id="cartTotal">0 ₽</span>
+                    </div>
+                    <button class="btn btn-primary cart__checkout" id="checkoutBtn">Оформить заказ</button>
+                    <a href="catalog.html" class="btn btn-outline cart__continue">Продолжить покупки</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========================================== -->
+<!-- ПОДВАЛ                                      -->
+<!-- ========================================== -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__col">
+            <a href="index.html" class="logo logo--footer">
+                <img src="img/logo.svg" alt="NRANE" class="logo__img" onerror="this.style.display='none'" />
+                <span class="logo__text">NRANE</span>
+            </a>
+            <p class="footer__copy">© 2026 NRANE. Все права защищены.</p>
+            <p class="footer__copy">Сделано с ❤️ в Армении</p>
+        </div>
+        <div class="footer__col">
+            <h4>Информация</h4>
+            <ul class="footer__links">
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h4>Контакты</h4>
+            <a href="mailto:info@nrane.com" class="footer__email">info@nrane.com</a>
+            <div class="footer__socials">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
