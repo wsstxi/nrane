@@ -1283,42 +1283,48 @@ img {
 }
 @media (max-width: 576px) {
     .header {
-        padding: 12px 0;
-        min-height: 60px;
+        padding: 12px 0 6px 0;
+        min-height: 50px;
     }
     .header__inner {
-        padding: 0 10px;
-        gap: 6px;
+        padding: 0 8px;
+        gap: 4px;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .logo {
+        gap: 4px;
+        flex-shrink: 0;
         align-items: center;
     }
     .logo__text {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.2;
     }
     .logo__img {
-        height: 22px;
+        height: 18px;
     }
     .header__cart {
-        font-size: 16px;
-        padding: 4px 0;
+        font-size: 14px;
+        padding: 2px 0;
     }
     .cart-count {
-        font-size: 10px;
-        line-height: 16px;
-        min-width: 16px;
-        padding: 0 5px;
+        font-size: 9px;
+        line-height: 14px;
+        min-width: 14px;
+        padding: 0 4px;
     }
     .header__burger span {
-        width: 22px;
-        height: 2.5px;
+        width: 18px;
+        height: 2px;
     }
     .nav {
-        top: 60px;
-        padding: 16px;
-        gap: 12px;
+        top: 50px;
+        padding: 12px;
+        gap: 10px;
     }
     .nav__link {
-        font-size: 15px;
-        padding: 6px 0;
+        font-size: 14px;
+        padding: 4px 0;
     }
 }
